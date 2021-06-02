@@ -15,7 +15,7 @@ export default class LoginScreen extends React.Component{
         if(email && password){
 
             try{
-              const response = await firebase.auth().signInWithEmailandPassword(email, password)
+              const response = await firebase.auth().signInWithEmailAndPassword(email, password)
               if(response){
                 alert('Login successful')
                 this.props.navigation.navigate('Transaction')
